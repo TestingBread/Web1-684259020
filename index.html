@@ -7,11 +7,17 @@
     <title>HTML Turorial : 684259020</title>
     <!-- internal CSS -->
     <style>
+        html {
+        scroll-behavior: smooth;
+    }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(209, 223, 223);
             margin: 20px;
-            scroll-behavior: smooth;
+
+            line-height: 1.5;
+
         }
         h1 {
             color: brown;
@@ -25,6 +31,26 @@
             padding: 10px;
             border-left: 4px solid greenyellow
         }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color:red;
+            background-color: rgb(59, 242, 255);
+        }
+        pre {
+            white-space: pre-wrap;
+            font-size: 16px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+    /* this is comment*/
     </style>
 </head>
 
@@ -85,6 +111,8 @@
         <h2 id="Heading">Heading</h2>
         <p>workshop</p>
         <p>HTML headings are defined with the &lt;h1> to &lt;h6> tags...</p>
+        <a href="w03-01-heading.html">Workshop1</a>
+        <a href="w03-02-heading.html">| Workshop2</a>
     <pre>
         - &lt;h1&gt;: Heading 1
         - &lt;h2&gt;: Heading 2
@@ -315,6 +343,15 @@
     </ul></pre>
     <a href="#top">Back to top</a>
 
+    <hr>
+
+    <div class="text-center">
+            <a href="https://www.w3schools.com/html/default.asp">Learn more about html</a>
+            <p>&copy;2026 Create by: 684259020: supakin phasuboon</p>
+    </div>
+
+
+    
 </body>
 </html>
 
