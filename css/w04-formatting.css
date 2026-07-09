@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 223, 223);
+    margin: 20px;
+
+    line-height: 1.5;
+}
+.hero,.card,.tip-box,footer {
+    border: 1px solid blueviolet;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(119, 182, 238);
+    padding: 10px;
+    color: rgb(2, 1, 1);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header p {
+        font-weight: lighter;
+        font-size: 13px;
+}
+.brand {display: flex;align-items: center;}
+.brand-icon {font-size: 40px; padding: 20px;}
+.brand-text p {font-size: 14px;}
+nav a {color:antiquewhite}
+nav a:hover {color:red; text-decoration: underline;}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: aquamarine;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}

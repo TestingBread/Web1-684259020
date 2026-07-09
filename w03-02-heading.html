@@ -63,8 +63,8 @@
             border-radius: 10px;
             box-shadow: -2px 4px 20px grey;
             margin-bottom: 30px;
-            
         }
+        .card pre {background-color: black; color:white;}
 
         .label{padding: 2px 6px; border-radius: 8px; color: aliceblue;}
 
@@ -85,6 +85,17 @@
             font-size: 16px;
             
         }
+        .text-shade {
+            background-color: lightyellow;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .text-shade h1 {color: blue;}
+        .text-shade h2 {color: aqua;}
+        .text-shade h3 {color: blueviolet;}
+        .text-shade h4 {color: pink;}
+        .text-shade h5 {color: darkgoldenrod;}
+        .text-shade h6 {color: yellow;background-color: gray;}
         .note {
             border-left: 4px solid greenyellow;
             background-color: rgb(247, 247, 247);
@@ -92,7 +103,13 @@
         .note::before {
             content: "📌";
         }
-        
+        .tipbox {
+            background-color: lightcoral;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: -2px 4px 20px grey;
+            margin-bottom: 30px;
+        }
         
     </style>
 </head>
@@ -133,11 +150,24 @@
              &lt;h5&gt;Example Code&lt;/h5&gt;
              &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;</code>
             </pre>
+            <p>จะแสดงผลแบบนี้</p>
+
+            <div class="text-shade">
+                <h1>H1: Welcome to My Website</h1>
+                <h2>H2: HTML Basics</h2>
+                <h3>H3: What is HTML?</h3>
+                <h4>H4: HTML Syntax</h4>
+                <h5>H5: Example Code</h5>
+                <h6>H6: Note about heading size</h6>
+            </div>
         </div>
         <p style="text-align: right;"><a href="index.html">Back to Home</a></p>
     </section>
 
-
+    <div class="tipbox">
+        <p>Tip: Use only one &lt;h1> per page - it represents the main topic or title.</p>
+        <p>Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+    </div>
 </body>
 
 </html>
