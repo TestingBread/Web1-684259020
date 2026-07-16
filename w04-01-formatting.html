@@ -24,7 +24,7 @@
     </header>
 
     <div class="hero">
-        <div class="hero-icon"><span>&lt;/&gt;</span></div>
+        <div class="hero-icon">&lt;/&gt;</div>
         <div class="hero-text">
         <h1>แบบฝึกปฏิบัติ: HTML Formatting</h1>
         <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
@@ -32,56 +32,89 @@
     </div>
     <div class="container">
         <div class="card-grid">
+            <!-- card 1 -->
             <div class="card">
+
                 <div class="card-header">
-                    <h2>🧪</h2>
-                    <h4>ตัวอย่างผลลัพธ์</h4>
+                    <span class="card-header-icon">🖥</span> ตัวอย่างผลลัพธ์
                 </div>
+            
                 <div class="card-body">
-                    <hr>
-                    <b class="card-text"><span class="card-span-color">B:</span> ข้อความตัวหนา</b>
-                    <hr>
-                    <strong><span class="card-span-color bold-text">STRONG:</span> ข้อความสำคัญ</strong>
-                    <hr>
-                    <i><span class="card-span-color bold-text">I:</span> ข้อความตัวเอียง</i>
-                    <hr>
-                    <EM><span class="card-span-color bold-text">EM:</span> ข้อความเน้นเสียง</em>
-                    <hr>
-                    <U><span class="card-span-color bold-text">U:</span> ข้อความขีดเส้นใต้</U>
-                    <hr>
-                    <p><span class="card-span-color bold-text">MARK:</span> <span><mark>ข้อความที่ถูกเน้น</mark></span></p>
-                    <hr>
-                    <small><span class="card-span-color bold-text">SMALL:</span> ข้อความขนาดเล็ก</small>
-                    <hr>
-                    <p><span class="card-span-color bold-text">DEL:</span> <span><del>ข้อความที่ถูกลบ</del></span></p>
-                    <hr>
-                    <p><span class="card-span-color bold-text">SUP:</span> x<sup>2</sup></p>
-                    <hr>
-                    <p><span class="card-span-color bold-text">SUB:</span> H<sub>2</sub>O</p>
+                    <div class="format-row">
+                        <span class="card-span-label B-label">B:</span>
+                        <b>ข้อความตัวหนา</b>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label ST-label">STRONG:</span>
+                        <strong>ข้อความสำคัญ</strong>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label i-label">I:</span>
+                        <i>ข้อความตัวเอียง</i>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label em-label">EM:</span>
+                        <em>ข้อความเน้นเสียง</em>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label u-label">U:</span>
+                        <u>ข้อความขีดเส้นใต้</u>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label mark-label">MARK:</span>
+                        <mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label small-label">SMALL:</span>
+                        <small>ข้อความขนาดเล็ก</small>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label del-label">DEL:</span>
+                        <del>ข้อความที่ถูกลบ</del>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label sup-label">SUP:</span>
+                        <span>x<sup>2</sup></span>
+                    </div>
+                    <div class="format-row">
+                        <span class="card-span-label sub-label">SUB:</span>
+                        <span>H<sub>2</sub>O</span>
+                    </div>
                 </div>
-                </div>
-            <div class="card">
-                <div class="card-header">
-                    <span><h2>&lt;/&gt;</h2></span>
-                    <h4>ตัวอย่างโค้ด HTML</h4>
-                </div>
-                <div class="card-body">
-                    <hr>
-<pre>
-<code>
-<span class="card-text-color">&lt;b&gt;</span>ข้อความตัวหนา<span class="card-text-color">&lt;/b&gt;</span>
-<span class="card-text-color">&lt;strong&gt;</span>ข้อความสำคัญ<span class="card-text-color">&lt;/strong&gt;</span>
-<span class="card-text-color">&lt;i&gt;</span>ข้อความตัวเอียง<span class="card-text-color">&lt;/i&gt;</span>
-<span class="card-text-color">&lt;em&gt;</span>ข้อความเน้นเสียง<span class="card-text-color">&lt;/em&gt;</span>
-<span class="card-text-color">&lt;u&gt;</span>ข้อความขีดเส้นใต้<span class="card-text-color">&lt;/u&gt;</span>
-<span class="card-text-color">&lt;mark&gt;</span>ข้อความที่ถูกเน้น<span class="card-text-color">&lt;/mark&gt;</span>
-<span class="card-text-color">&lt;small&gt;</span>ข้อความขนาดเล็ก<span class="card-text-color">&lt;/small&gt;</span>
-<span class="card-text-color">&lt;del&gt;</span>ข้อความที่ถูกลบ<span class="card-text-color">&lt;/del&gt;</span>
-x<span class="card-text-color">&lt;sup&gt;</span>2<span class="card-text-color">&lt;/sup&gt;</span>
-H<span class="card-text-color">&lt;sub&gt;</span>2<span class="card-text-color">&lt;/sub&gt;</span>O</code>
-</pre>
-                </div>
+            
+            
             </div>
+            <!-- card 2 -->
+            <div class="card">
+            
+                <div class="card-header">
+                    <span class="card-header-icon">&lt;/&gt;</span>
+                    ตัวอย่างโค้ด HTML
+                </div>
+            
+                <div class="card-body">
+                    <div class="pre-box">
+                        <pre>
+
+<span class="line-no">1</span><span class="html-tag">&lt;b&gt;</span><span>ข้อความตัวหนา</span><span class="html-tag">&lt;/b&gt;</span>
+<span class="line-no">2</span><span class="html-tag">&lt;strong&gt;</span><span>ข้อความสำคัญ</span><span class="html-tag">&lt;/strong&gt;</span>
+<span class="line-no">3</span><span class="html-tag">&lt;i&gt;</span><span>ข้อความตัวเอียง</span><span class="html-tag">&lt;/i&gt;</span>
+<span class="line-no">4</span><span class="html-tag">&lt;em&gt;</span><span>ข้อความเน้นเสียง</span><span class="html-tag">&lt;/em&gt;</span>
+<span class="line-no">5</span><span class="html-tag">&lt;u&gt;</span><span>ข้อความขีดเส้นใต้</span><span class="html-tag">&lt;/u&gt;</span>
+<span class="line-no">6</span><span class="html-tag">&lt;mark&gt;</span><span>ข้อความที่ถูกเน้น</span><span class="html-tag">&lt;/mark&gt;</span>
+<span class="line-no">7</span><span class="html-tag">&lt;small&gt;</span><span>ข้อความขนาดเล็ก</span><span class="html-tag">&lt;/small&gt;</span>
+<span class="line-no">8</span><span class="html-tag">&lt;del&gt;</span><span>ข้อความที่ถูกลบ</span><span class="html-tag">&lt;/del&gt;</span>
+<span class="line-no">9</span><span>x</span><span class="html-tag">&lt;sup&gt;</span><span>2</span><span class="html-tag">&lt;/sup&gt;</span>
+<span class="line-no">10</span><span>H</span><span class="html-tag">&lt;sub&gt;</span><span>2</span><span class="html-tag">&lt;/sub&gt;</span><span>O</span>
+
+</pre>
+                    </div>
+                </div>
+            
+            
+            
+            </div>
+            <!-- card3 -->
             <div class="card">
                 <div class="card-header">
                     <h2>🎯</h2>
@@ -134,6 +167,6 @@ H<span class="card-text-color">&lt;sub&gt;</span>2<span class="card-text-color">
         
     </div>
 
-    <footer>footer</footer>
+    <footer><p>Copyright &copy; supakin phasuboon</p></footer>
 </body>
 </html>

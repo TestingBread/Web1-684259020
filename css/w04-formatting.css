@@ -1,120 +1,226 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(209, 223, 223);
-    margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(209, 223, 223);
+  margin: 0px;
 
-    line-height: 1.5;
+  line-height: 1.5;
 }
-.hero,.tip-box,footer {
-    border: 1px solid blueviolet;
-    background-color: aliceblue;
-    margin: 20px;
-    padding: 20px;
+/* .hero, */
+.tip-box,
+footer {
+  border: 1px solid blueviolet;
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 20px;
 }
-
+/* -----------------------------
+              header            
+-------------------------------- */
 header {
-    background-color: rgb(119, 182, 238);
-    padding: 10px;
-    color: rgb(2, 1, 1);
-    font-weight: bold;
+  background-color: rgb(119, 182, 238);
+  padding: 10px;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header p {
-        font-weight: lighter;
-        font-size: 13px;
+  font-weight: lighter;
+  font-size: 13px;
 }
-.brand {display: flex;align-items: center;}
-.brand-icon {font-size: 40px; padding: 20px;}
-.brand-text p {font-size: 14px;}
-nav a {color:antiquewhite}
-nav a:hover {color:red; text-decoration: underline;}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
+.brand-icon {
+  font-size: 40px;
+  padding: 20px;
+}
+.brand-text p {
+  font-size: 14px;
+}
+nav a {
+  color: antiquewhite;
+  margin-right: 14px;
+}
+nav a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* -----------------------------
+              hero            
+-------------------------------- */
+.hero {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+.hero-icon {
+  border-radius: 25px;
+  background-color: red;
+  border: 5px solid red;
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text h1 {
+  color: rgb(21, 21, 146);
+}
+/* -----------------------------
+              main content            
+-------------------------------- */
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: aquamarine;
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  /* background-color: aquamarine; */
 }
-
-.hero-icon span {
-    border-radius: 360px;
-    background-color: red;
-    border: 5px solid red;
-    color: white;
-    font-weight: bolder;
-}
-
+/* -----------------------------
+              cards            
+-------------------------------- */
 .card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 .card-header h2 {
-    border-radius: 360px;
-    background-color: aqua;
-    padding: 5px;
+  border-radius: 360px;
+  background-color: aqua;
+  padding: 5px;
 }
 .card-body hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.card-body pre {
-    background-color: rgb(52, 50, 68);
-    color: white;
-    border-radius: 8px;
-    padding: 12px;
-}
+/* .card-body pre {
+  background-color: ;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+} */
 .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .card {
-    border: 1px solid blueviolet;
-    background-color: aliceblue;
-    margin: 20px;
-    padding: 20px;
+  border: 1px solid blueviolet;
+
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 2px 2px 15px blueviolet;
+  /* padding: 20px; */
 }
-.card p {
-    margin: 10px 0px;
+.card-header {
+  background-color: rgb(219, 233, 241);
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+
+  padding: 20px;
+  border-bottom: 1px solid blueviolet;
+
+}
+.card-header-icon {
+  background-color: blue;
+  color: white;
+  /* padding: 14px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+.card-body {
+  padding: 20px
+
 }
 
-.card-span-color {
-    background-color: rgba(151, 69, 228, 0.733);
-    padding: 8px;
-    border-radius: 25px;
+.card-span-label {
+  /* padding: 4px 40px; */
+  border-radius: 8px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
 }
-.bold-text {
-    font-weight: bold;
+
+.B-label {background-color: rgba(236, 23, 23, 0.733);}
+.ST-label {background-color: rgba(236, 168, 23, 0.733);}
+.i-label {background-color: rgba(23, 97, 236, 0.733);}
+.em-label {background-color: rgba(236, 197, 23, 0.733);}
+.u-label {background-color: rgba(23, 236, 119, 0.733);}
+.mark-label {background-color: rgba(44, 23, 236, 0.733);}
+.small-label {background-color: rgba(236, 23, 140, 0.733);}
+.del-label {background-color: rgba(23, 236, 87, 0.733);}
+.sup-label {background-color: rgba(23, 108, 236, 0.973);}
+.sub-label {background-color: rgba(21, 19, 134, 0.733);}
+
+.format-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  /* text-align: center; */
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20ox;
 }
-.card-text-color {
-    color: rgb(233, 62, 62);
+.line-no {
+  color: rgb(62, 199, 233);
+  display: inline-block;
+
+  width: 20px;
 }
+
+.pre-box {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+.html-tag {color: rgb(247, 29, 29);}
+
+/* -----------------------------
+              tipbox            
+-------------------------------- */
 
 .tip-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .tip-header h2 {
-    background-color: lightyellow;
-    border: 1px solid red;
-    border-radius: 100%;
-    padding: 5px;
+  background-color: lightyellow;
+  border: 1px solid red;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 .tip-header h4 {
-    font-weight: bold;
-    font-size: 26px;
+  font-weight: bold;
+  font-size: 26px;
 }
 .task {
-    display: flex;
+  display: flex;
 }
