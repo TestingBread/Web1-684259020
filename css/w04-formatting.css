@@ -152,6 +152,8 @@ nav a:hover {
   border-radius: 50%;
 
 }
+.purple-bg {background-color:  purple;}
+.purple-text {color: purple;}
 .card-body {
   padding: 20px
 
@@ -202,25 +204,46 @@ nav a:hover {
 }
 .html-tag {color: rgb(247, 29, 29);}
 
+.task {
+  display: inline-flex;}
+
+.task-list {list-style: none; }
+.task-list li {margin-bottom: 20px;}
+.card-span-check {
+  background-color: aquamarine;
+  /* padding: 10px; */
+  display: inline-flex;
+  height: 38px;
+  width: 38px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  
+}
+.check-color1 {background-color: aqua;}
+.check-color2 {background-color: rgb(141, 206, 37);}
+.check-color3 {background-color: rgb(57, 243, 1);}
+.check-color4 {background-color: rgb(231, 21, 161);}
+.check-color5 {background-color: rgb(238, 223, 8);}
+
+
+
 /* -----------------------------
               tipbox            
 -------------------------------- */
 
-.tip-header {
+.tip-box {
   display: flex;
-  align-items: center;
-}
-.tip-header h2 {
-  background-color: lightyellow;
-  border: 1px solid red;
-  border-radius: 100%;
-  padding: 5px;
 }
 
-.tip-header h4 {
+.tip-body h4{
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
+  color: brown;
+
+
 }
-.task {
-  display: flex;
-}
+
