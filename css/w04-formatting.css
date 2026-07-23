@@ -38,7 +38,7 @@ header p {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;  
+  gap: 10px;
 }
 .brand-icon {
   font-size: 40px;
@@ -138,7 +138,6 @@ nav a:hover {
 
   padding: 20px;
   border-bottom: 1px solid blueviolet;
-
 }
 .card-header-icon {
   background-color: blue;
@@ -150,13 +149,15 @@ nav a:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
 }
-.purple-bg {background-color:  purple;}
-.purple-text {color: purple;}
+.purple-bg {
+  background-color: purple;
+}
+.purple-text {
+  color: purple;
+}
 .card-body {
-  padding: 20px
-
+  padding: 20px;
 }
 
 .card-span-label {
@@ -167,16 +168,36 @@ nav a:hover {
   text-align: center;
 }
 
-.B-label {background-color: rgba(236, 23, 23, 0.733);}
-.ST-label {background-color: rgba(236, 168, 23, 0.733);}
-.i-label {background-color: rgba(23, 97, 236, 0.733);}
-.em-label {background-color: rgba(236, 197, 23, 0.733);}
-.u-label {background-color: rgba(23, 236, 119, 0.733);}
-.mark-label {background-color: rgba(44, 23, 236, 0.733);}
-.small-label {background-color: rgba(236, 23, 140, 0.733);}
-.del-label {background-color: rgba(23, 236, 87, 0.733);}
-.sup-label {background-color: rgba(23, 108, 236, 0.973);}
-.sub-label {background-color: rgba(21, 19, 134, 0.733);}
+.B-label {
+  background-color: rgba(236, 23, 23, 0.733);
+}
+.ST-label {
+  background-color: rgba(236, 168, 23, 0.733);
+}
+.i-label {
+  background-color: rgba(23, 97, 236, 0.733);
+}
+.em-label {
+  background-color: rgba(236, 197, 23, 0.733);
+}
+.u-label {
+  background-color: rgba(23, 236, 119, 0.733);
+}
+.mark-label {
+  background-color: rgba(44, 23, 236, 0.733);
+}
+.small-label {
+  background-color: rgba(236, 23, 140, 0.733);
+}
+.del-label {
+  background-color: rgba(23, 236, 87, 0.733);
+}
+.sup-label {
+  background-color: rgba(23, 108, 236, 0.973);
+}
+.sub-label {
+  background-color: rgba(21, 19, 134, 0.733);
+}
 
 .format-row {
   display: grid;
@@ -202,13 +223,20 @@ nav a:hover {
   border-radius: 12px;
   padding: 20px;
 }
-.html-tag {color: rgb(247, 29, 29);}
+.html-tag {
+  color: rgb(247, 29, 29);
+}
 
 .task {
-  display: inline-flex;}
+  display: inline-flex;
+}
 
-.task-list {list-style: none; }
-.task-list li {margin-bottom: 20px;}
+.task-list {
+  list-style: none;
+}
+.task-list li {
+  margin-bottom: 20px;
+}
 .card-span-check {
   background-color: aquamarine;
   /* padding: 10px; */
@@ -221,15 +249,22 @@ nav a:hover {
   color: white;
   font-weight: bold;
   font-size: 24px;
-  
 }
-.check-color1 {background-color: aqua;}
-.check-color2 {background-color: rgb(141, 206, 37);}
-.check-color3 {background-color: rgb(57, 243, 1);}
-.check-color4 {background-color: rgb(231, 21, 161);}
-.check-color5 {background-color: rgb(238, 223, 8);}
-
-
+.check-color1 {
+  background-color: aqua;
+}
+.check-color2 {
+  background-color: rgb(141, 206, 37);
+}
+.check-color3 {
+  background-color: rgb(57, 243, 1);
+}
+.check-color4 {
+  background-color: rgb(231, 21, 161);
+}
+.check-color5 {
+  background-color: rgb(238, 223, 8);
+}
 
 /* -----------------------------
               tipbox            
@@ -237,13 +272,11 @@ nav a:hover {
 
 .tip-box {
   display: flex;
+  border-radius: 20px;
 }
 
-.tip-body h4{
+.tip-body h4 {
   font-weight: bold;
   font-size: 24px;
   color: brown;
-
-
 }
-
