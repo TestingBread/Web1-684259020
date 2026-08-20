@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Kanit', Helvetica, sans-serif;
+  font-family: "Kanit", Helvetica, sans-serif;
   background-color: gainsboro;
   color: rgb(31, 29, 29);
   line-height: 1.6;
@@ -36,17 +36,17 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  color:aliceblue;
+  color: aliceblue;
 }
 .brand-logo {
-font-size: 30px;
-background-color: yellow;
-border-radius: 50%;
-width: 55px;
-height: 55px;
-display: flex;
-justify-content: center;
-align-items: center;
+  font-size: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .brand-text h2 {
   font-size: 24px;
@@ -81,7 +81,7 @@ align-items: center;
   text-decoration: none;
   background-color: rgba(240, 255, 255, 0.555);
   border-radius: 8px;
-  
+
 }
 
 /* ========================================================================== 
@@ -99,7 +99,7 @@ align-items: center;
 }
 /* left content */
 .left-content {
-    /* border: 1px solid rgb(68, 0, 255);
+  /* border: 1px solid rgb(68, 0, 255);
   padding: 15px;
   margin: 15px; */
 }
@@ -107,17 +107,16 @@ align-items: center;
   /* border: 1px solid rgb(68, 0, 255);
   padding: 15px;
   margin: 15px; */
-   padding: 26px 36px;
-   border-radius: 36px;
+  padding: 26px 36px;
+  border-radius: 36px;
 
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
 
   background: linear-gradient(90deg, white, hsl(64, 100%, 50%));
-  box-shadow: 0 4px 8px black;
+  box-shadow: 0 4px 8px rgb(119, 119, 119);
 
   align-items: center;
-  
 }
 
 .hero-text h1 {
@@ -140,28 +139,127 @@ align-items: center;
   box-shadow: 0 4px 8px black;
 
   object-fit: fill;
-  
-    /*
+
+  /*
     object-fit: contain ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)
     object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)
     object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก
     */
-
 }
 .card {
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  padding: 26px 36px;
+  box-shadow: 0 4px 8px rgb(119, 119, 119);
+  margin-top: 20px;
+  
+}
+
+.card-header-title {
+}
+
+.card-header-title h2 {
+  color: crimson;
+}
+.card-body-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 8px;
+}
+/* =============== RESULT =================== */
+.result-panel, .code-panel {
+  border: 1px solid gray;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.result-panel-header, .code-panel-header {
+background-color: aquamarine;
+color: crimson;
+padding: 0px 20px;
+font-weight: bold;
+}
+.result-panel-body {
+  padding: 5px 20px 10px 20px;
+  line-height: 2;
+
+}
+.result-panel-body a {
+  display: block;
+  color: blue;
+}
+.result-panel-body a:hover {
+  display: block;
+  color: red;
+}
+.result-panel-body span {
+  background-color: blue;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+.backbutton {
+  border: 2px solid blue;
+  border-radius: 8px;
+  display: inline-block !important;
+  padding: 0px 20px;
+
+  text-decoration: none;
+}
+
+/* ====================================================== */
+/* =============== CODE PANEL =================== */
+.code-panel {
+  background-color: #000000;
+}
+/* .code-panel-header {
+
+} */
+
+.code-panel-body {
+  color:white
+}
+
+.code-list {
+  padding: 20px 40px;
+}
+.code-list li {
+  padding: 0px 20px;
+}
+
+
+.tag {color: lightcoral}
+.attr {color: darkseagreen;}
+.value {color:greenyellow}
+
+/* ====================================================== */
+
+/* ================================= IMAGE EX ================ */
+
+.result-panel-body-3g{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  align-items: baseline;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+/* right sidebar */
+.right-sidebar {
   border: 1px solid rgb(68, 0, 255);
   padding: 15px;
   margin: 15px;
 }
-/* right sidebar */
-.right-sidebar {
-    border: 1px solid rgb(68, 0, 255);
-  padding: 15px;
-  margin: 15px;
-}
-.side-card {}
 
-.submit-card {}
+.side-card {
+}
+
+.submit-card {
+}
 /* ========================================================================== 
     Footer section
 ========================================================================== */
