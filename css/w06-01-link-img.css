@@ -168,7 +168,7 @@ body {
   gap: 8px;
 }
 /* =============== RESULT =================== */
-.result-panel, .code-panel {
+.result-panel, .code-panel, .side-card {
   border: 1px solid gray;
   border-radius: 8px;
   overflow: hidden;
@@ -255,9 +255,21 @@ font-weight: bold;
   margin: 15px;
 }
 
-.side-card {
-}
 
+
+.side-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.side-card-body {
+}
+.side-card-body span {
+background-color: blue;
+border-radius: 50%;
+color: white;
+padding: 12px;
+}
 .submit-card {
 }
 /* ========================================================================== 
