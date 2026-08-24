@@ -250,7 +250,7 @@ font-weight: bold;
 
 /* right sidebar */
 .right-sidebar {
-  border: 1px solid rgb(68, 0, 255);
+  /* border: 1px solid rgb(68, 0, 255); */
   padding: 15px;
   margin: 15px;
 }
@@ -262,14 +262,67 @@ font-weight: bold;
   padding: 20px;
   margin-bottom: 15px;
 }
-.side-card-body {
+.side-card-body-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
+
+
+
 .side-card-body span {
 background-color: blue;
 border-radius: 50%;
+/* width: 55px; */
+/* height: 55px; */
 color: white;
 padding: 12px;
 }
+.side-card-body-2 p {text-align: center;}
+.cornerbox {
+  border-radius: 15px;
+}
+.colorRed {
+  background-color: lightcoral;
+  color: red;
+}
+
+.colorgreen {
+  background-color: lightgreen;
+  color: green;
+}
+
+.colorblue {
+  background-color: rgb(30, 130, 163);
+  color: blue;
+}
+
+.colorcyan {
+  background-color: rgb(13, 235, 235);
+  color: rgb(198, 248, 248);
+}
+
+.colorcrimson {
+  background-color: rgb(245, 38, 72);
+  color: rgb(240, 110, 136);
+}
+
+.colorlightblue {
+  background-color: #3bafe0;
+  color: #a2cef3;
+}
+
+.coloryellow {
+  background-color: rgb(247, 247, 76);
+  color: #d6a500;
+}
+
+.colorlightyellow {
+  background-color: #f1d91e;
+  color: #c9a600;
+}
+
+
 .submit-card {
 }
 /* ========================================================================== 
