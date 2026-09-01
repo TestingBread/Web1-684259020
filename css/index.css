@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1c1e; 
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Topbar Header */
+.topbar {
+    background-color: #24272a;
+    border-bottom: 4px solid greenyellow;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+    position: sticky; /*lock */
+    top: 0; /*put on of screen*/
+    z-index: 100; /*put on top layer */
+
+}
+
+.topbar h1 {
+    margin: 0;
+    color: greenyellow;
+}
+
+.topbar .subtitle {
+    margin: 5px 0 0 0;
+    color: #bbbbbb;
+}
+
+/* Headings */
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: greenyellow;
+    margin-top: 0;
+}
+
+.card-hero {
+    grid-column: 1 / -1; 
+    background-color: #24272a;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid greenyellow;
+}
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.card {
+    background-color: #24272a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-top: 3px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+pre {
+    background-color: #151718;
+    color: #dcdcdc;
+    padding: 12px;
+    border-left: 4px solid greenyellow;
+    white-space: pre-wrap;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    
+    height: 220px;          
+    overflow-y: auto;       
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #111213;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #2a2d30;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background: #3a3e42;
+}
+a {
+    color: aqua;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #24272a;
+    border-top: 4px solid greenyellow;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
