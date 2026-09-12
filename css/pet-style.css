@@ -18,7 +18,12 @@
     --nav-text-color: rgb(68, 67, 67);
     --light-text-color: white;
 
-        /* Shadow colors */
+    --tip-box-header-color-card1: rgb(17, 73, 226);
+    --tip-box-header-color-card2: rgb(196, 77, 226);
+    --tip-box-header-color-card3: rgb(6, 73, 26); 
+    --tip-box-header-color-card4: rgb(126, 118, 11);
+
+    /* Shadow colors */
     --header-shoadow: 0px 0.2px 8px black;
     --card-shoadow: 0px 0.3px 8px black;
 
@@ -37,6 +42,13 @@
     --btn-bg-color: rgb(89, 0, 255);
 
     --card-BG-color: white;
+
+        /* tip-box-card-BG colors */
+            /* --tip-box-BG: white; */
+        --tip-box-card-BG1: rgba(0, 255, 255, 0.425);
+        --tip-box-card-BG2: rgba(196, 77, 226, 0.425);
+        --tip-box-card-BG3: rgba(27, 252, 94, 0.425);
+        --tip-box-card-BG4: rgba(255, 238, 0, 0.425);
 
     --footer-BG-color: black;
 
@@ -166,6 +178,56 @@ nav a.active {
 }
 
 .breed {}
+
+/*========== TIPBOX ============*/
+
+.tip-box {
+    background-color: var(--card-BG-color);
+    margin-top: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: var(--card-shoadow);
+}
+
+.tip-box-title {
+    display: flex;
+
+    justify-content: center;
+    font-size: 1.2rem;
+
+    padding: 1.5rem;
+}
+
+.tip-box-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.tip-box-card {
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+}
+
+.tip-box-card-header {
+    font-weight: bold;
+}
+.tip-box-card-header {font-weight: bold;}
+
+.tip-box-card-body {
+    color: var(--Text-color);
+}
+
+/* tip-box-card-BG colors */
+.tip-box-card-BG1 {background-color: var(--tip-box-card-BG1);}
+.tip-box-card-BG2 {background-color: var(--tip-box-card-BG2);}
+.tip-box-card-BG3 {background-color: var(--tip-box-card-BG3);}
+.tip-box-card-BG4 {background-color: var(--tip-box-card-BG4);}
+/* tip-box-card-header colors */
+.tip-box-header-color-card1 {color: var(--tip-box-header-color-card1);}
+.tip-box-header-color-card2 {color: var(--tip-box-header-color-card2);}
+.tip-box-header-color-card3 {color: var(--tip-box-header-color-card3);}
+.tip-box-header-color-card4 {color: var(--tip-box-header-color-card4);}
 
 
 /*========== F O O T E R ============*/
