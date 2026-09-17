@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Primary-colors */
+  --primary-color: rgb(128, 203, 228);
+  --primary-dark-color: blue;
+
+  /* text sizing */
+  --clamp-text: 2rem, 5vw, 3rem; /* header
+
+    /* Text colors */
+  --Text-color: rgb(8, 8, 8);
+  --Text-mute: rgb(88, 87, 87);
+
+  --nav-text-color: rgb(68, 67, 67);
+  --light-text-color: white;
+
+  --tip-box-header-color-card1: rgb(17, 73, 226);
+  --tip-box-header-color-card2: rgb(196, 77, 226);
+  --tip-box-header-color-card3: rgb(6, 73, 26);
+  --tip-box-header-color-card4: rgb(126, 118, 11);
+
+  /* Shadow colors */
+  --header-shoadow: 0px 0.2px 8px black;
+  --card-shoadow: 0px 0.3px 8px black;
+
+  /* btn behavior */
+  --nav-transition: transform 0.2s; /*delay*/
+  --nav-transform: -5px; /*height on hover*/
+
+  --card-transition: transform 0.2s; /*delay*/
+  --card-transform: -5px; /*height on hover*/
+
+  /* background Colors */
+  --body-BG-color: linear-gradient(
+    90deg,
+    rgb(11, 248, 157),
+    rgb(207, 252, 253),
+    cyan
+  );
+
+  --header-BG-color: rgba(255, 255, 255, 0.932);
+
+  --btn-bg-color: rgb(89, 0, 255);
+
+  --card-BG-color: white;
+
+  --bg-mute: rgba(88, 87, 87, 0.281);
+  /* tip-box-card-BG colors */
+  /* --tip-box-BG: white; */
+  --tip-box-card-BG1: rgba(0, 255, 255, 0.425);
+  --tip-box-card-BG2: rgba(196, 77, 226, 0.425);
+  --tip-box-card-BG3: rgba(27, 252, 94, 0.425);
+  --tip-box-card-BG4: rgba(255, 238, 0, 0.425);
+
+  --footer-BG-color: black;
+
+  /* borders colors */
+  --border-color: 1.6px solid rgb(131, 131, 131);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* font-size: <X px>; = <X px> rem */
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: var(--Text-color);
+  background: var(--body-BG-color);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/*========== H E A D E R ============*/
+
+.header {
+  background-color: var(--header-BG-color);
+  text-align: center;
+  box-shadow: var(--header-shoadow);
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  padding: 1.5rem 0px;
+}
+
+.header-title {
+  color: var(--primary-dark-color);
+  font-size: clamp(var(--clamp-text));
+}
+
+.header-subtitle {
+  color: var(--Text-mute);
+}
+
+/*==========    N  A   V    ============*/
+nav {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.category-nav label {
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.3rem;
+
+  text-decoration: none;
+  color: var(--nav-text-color);
+  box-shadow: var(--card-shoadow);
+
+  border-radius: 999px;
+
+
+  display: inline-block;
+
+  transition: var(--nav-transition); /*delay*/
+}
+
+.category-nav label:hover {
+  transform: translateY(var(--nav-transform)); /*height on hover*/
+}
+
+/* .category-nav label.active {
+  background-color: var(--btn-bg-color);
+  color: var(--light-text-color);
+} */
+
+/* hide radio btn */
+.filter-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+/* ใส่สีให้ label ที่เลือก */
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-brid:checked ~ .category-nav label[for="filter-brid"],
+#filter-fih:checked ~ .category-nav label[for="filter-fih"],
+#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"]
+{
+  background-color: var(--primary-dark-color);
+  color: var(--light-text-color);
+}
+/* hide category title */
+.category-hide {
+  display: none;
+}
+/* show category card */
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-brid:checked ~ main .show-brid,
+#filter-fih:checked ~ main .show-fih,
+#filter-small-pet:checked ~ main .show-small-pet
+{
+  display: inline;
+}
+
+/* hide animal card */
+#filter-dog:checked ~ main .pet-card,
+#filter-cat:checked ~ main .pet-card,
+#filter-brid:checked ~ main .pet-card,
+#filter-fih:checked ~ main .pet-card,
+#filter-small-pet:checked ~ main .pet-card
+{display: none;}
+
+
+/* show animal card */
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-brid:checked ~ main .show-brid,
+#filter-fih:checked ~ main .show-fih,
+#filter-small-pet:checked ~ main .show-small-pet
+{display: block;}
+
+
+
+
+/*==========    M  A   I   N    ============*/
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pet-card {
+  border: var(--border-color);
+  box-shadow: var(--card-shoadow);
+  overflow: hidden;
+  border-radius: 0.75rem;
+
+  background-color: var(--card-BG-color);
+
+  transition: var(--card-transition); /*delay*/
+}
+.pet-card:hover {
+  transform: translateY(var(--card-transform)); /*height on hover*/
+}
+
+.pet-card img {
+  height: 16.5rem;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.pet-content {
+  padding: 1.25rem;
+}
+.pet-content h2 {
+  color: var(--primary-color);
+}
+
+.breed {
+}
+
+/*========== TIPBOX ============*/
+
+.tip-box {
+  background-color: var(--card-BG-color);
+  margin-top: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: var(--card-shoadow);
+}
+
+.tip-box-title {
+  display: flex;
+
+  justify-content: center;
+  font-size: 1.2rem;
+
+  padding: 1.5rem;
+}
+
+.tip-box-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.tip-box-card {
+  border-radius: 1.2rem;
+  padding: 0.5rem;
+}
+
+.tip-box-card-header {
+  font-weight: bold;
+}
+.tip-box-card-header {
+  font-weight: bold;
+}
+
+.tip-box-card-body {
+  color: var(--Text-color);
+}
+
+/* tip-box-card-BG colors */
+.tip-box-card-BG1 {
+  background-color: var(--tip-box-card-BG1);
+}
+.tip-box-card-BG2 {
+  background-color: var(--tip-box-card-BG2);
+}
+.tip-box-card-BG3 {
+  background-color: var(--tip-box-card-BG3);
+}
+.tip-box-card-BG4 {
+  background-color: var(--tip-box-card-BG4);
+}
+/* tip-box-card-header colors */
+.tip-box-header-color-card1 {
+  color: var(--tip-box-header-color-card1);
+}
+.tip-box-header-color-card2 {
+  color: var(--tip-box-header-color-card2);
+}
+.tip-box-header-color-card3 {
+  color: var(--tip-box-header-color-card3);
+}
+.tip-box-header-color-card4 {
+  color: var(--tip-box-header-color-card4);
+}
+
+/*========== FORM R A D I O ============*/
+
+.form-radio {
+  background-color: var(--card-BG-color);
+  margin-top: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: var(--card-shoadow);
+  padding: 1rem;
+}
+.radio-option {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+
+  flex-wrap: wrap;
+}
+
+
+.form-radio h2 {
+  text-align: center;
+  color: var(--primary-dark-color);
+}
+
+.form-radio p {
+  text-align: center;
+  color: var(--Text-mute);
+  margin-bottom: 0.8rem;
+}
+
+.form-radio fieldset {
+  padding: 1.5rem;
+  border: var(--border-color);
+  border-radius: 0.7rem;
+}
+
+.form-radio legend {
+  padding: 0 0.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.radio-item label {
+  background-color: var(--bg-mute);
+  color: var(--Text-color);
+
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+.radio-item input {
+  accent-color: var(--primary-color);
+}
+
+.radio-item input:checked + label {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.reset-btn {
+  background-color: var(--primary-dark-color);
+  color: var(--light-text-color);
+
+  border: var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  box-shadow: var(--card-shoadow);
+
+  margin: 1.5rem auto 0;
+  display: block;
+
+  cursor: pointer;
+
+}
+
+/*========== F O O T E R ============*/
+
+footer {
+  background-color: var(--footer-BG-color);
+  color: var(--light-text-color);
+
+  text-align: center;
+
+  padding-block: 2rem;
+  margin-top: 2rem;
+}
+
+/*========== R E S P O N S I V E ============*/
