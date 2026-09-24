@@ -23,10 +23,6 @@
   --tip-box-header-color-card3: rgb(6, 73, 26);
   --tip-box-header-color-card4: rgb(126, 118, 11);
 
-  --info-lifespan: rgb(236, 61, 38);
-  --info-size: rgb(39, 87, 243);
-  --info-temperament: rgb(44, 172, 18);
-
   /* Shadow colors */
   --header-shoadow: 0px 0.2px 8px black;
   --card-shoadow: 0px 0.3px 8px black;
@@ -37,9 +33,6 @@
 
   --card-transition: transform 0.2s; /*delay*/
   --card-transform: -5px; /*height on hover*/
-
-  --btn-transition: transformY 0.2s; /*delay*/
-  --btn-transform: -5px; /*height on hover*/
 
   /* background Colors */
   --body-BG-color: linear-gradient(
@@ -78,8 +71,48 @@ body {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.6;
   color: var(--Text-color);
-  background: var(--body-BG-color);
+  /* background: var(--body-BG-color); */
 }
+
+
+/* PARTICLES ZONEEEE */
+.bg-particles  {
+   position: fixed;
+   overflow: hidden;
+   background: rgb(10, 10, 15);
+   }
+
+.particle  {
+   position: absolute;
+   bottom: -20px;
+   width: 4px;
+   height: 4px;
+   background: rgb(99, 102, 241);
+   border-radius: 50%;
+   animation: 10s ease 0s infinite normal none running float;
+   }
+
+@keyframes float  {
+   
+  0%  {
+   transform: translateY(0px) rotate(0deg);
+   opacity: 1;
+   }
+  50%  {
+   opacity: 0.25;
+   }
+  90%  {
+   opacity: 0.5;
+   }
+  100%  {
+   transform: translateY(-350px) rotate(720deg);
+   opacity: 0;
+   }
+}
+
+
+/* RAHHHHHHHHHHHHHHHHHHHH */
+
 
 .container {
   max-width: 1320px;
@@ -200,9 +233,6 @@ nav {
 
 
 /*==========    M  A   I   N    ============*/
-
-
-
 .page-title {
   text-align: center;
   font-size: 2.5rem;
@@ -212,8 +242,7 @@ nav {
 
 .pet-grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -248,72 +277,6 @@ nav {
 .breed {
 }
 
-/* ========= information hide/show button */
-.pet-info {
-  list-style-type: none;
-  padding-block: 1.2rem;
-}
-.pet-info li {
-  margin-block: 0.5rem;
-}
-
-.info-lifespan {
-  color: var(--info-lifespan);
-}
-
-.info-size {
-  color: var(--info-size);
-}
-
-.info-temperament {
-  color: var(--info-temperament);
-}
-
-.pet-details summary {
-  list-style-type: none;
-}
-
-.pet-btn {
-  background-color: var(--primary-dark-color);
-  color: var(--light-text-color);
-  box-shadow: var(--card-shoadow);
-
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-
-  text-align: center;
-  cursor: pointer;
-  transition: var(--btn-transition);
-}
-.pet-btn:hover {
-  background-color: var(--primary-color);
-  transform: translateY(var(--btn-transform));
-}
-
-
-.hide-detail {
-  display: none;
-}
-
-.pet-details[open] .hide-detail {display: inline-block;}
-
-.pet-details[open] .show-detail {display: none;}
-
-.pet-details-body {
-  margin-top: 1rem;
-
-  animation: appear 0.6s linear 0.5s;
-}
-
-.pet-details-body section + section{
-  margin-top: 1rem;
-}
-
-@keyframes appear {
-  from {opacity: 0.02; transform: translateX(-100px);} 
-  to {opacity: 1;}
-}
-
 /*========== TIPBOX ============*/
 
 .tip-box {
@@ -334,11 +297,7 @@ nav {
 
 .tip-box-card-grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px)), 1fr);
-
-
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
   padding: 1rem;
 }
@@ -385,56 +344,6 @@ nav {
 .tip-box-header-color-card4 {
   color: var(--tip-box-header-color-card4);
 }
-/*========== Taeble ============*/
-.table-responsive, .guide-note {padding: 1rem;}
-
-.pet-table td ,
-.pet-table th
-{
-  border: var(--border-color);
-  /* border-collapse: collapse; */
-  padding: 1rem;
-  vertical-align: top;
-  overflow-wrap: break-word;
-}
-.pet-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-.pet-table thead th {
-  background-color: var(--primary-dark-color);
-  color: var(--light-text-color);
-  /* width: 200px; */
-}
-.pet-table tbody th {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-
-  text-align: left;
-
-  
-  /* white-space: nowrap; */
-  /* width: 200px; */
-}
-
-/* .pet-table thead th:nth-child(1) {width: 200px;}
-.pet-table thead th:nth-child(2) {width: 400px;} */
-.pet-table thead th:nth-child(3) {width: 200px;}
-/* .pet-table thead th:nth-child(4) {width: 400px;} */
-.pet-table thead th:nth-child(5) {width: 200px;}
-
-.pet-table caption {
-  text-align: left;
-  font-weight: bold;
-  color: var(--Text-color);
-
-  /* caption-side: top; top is default */
-}
-.pet-table tbody tr:nth-child(even) {background-color: var(--primary-color);}
-
-.pet-table tbody tr:hover {background-color: var(--bg-mute);}
 
 /*========== FORM R A D I O ============*/
 
@@ -512,10 +421,7 @@ nav {
   cursor: pointer;
 
 }
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
-}
+
 /*========== F O O T E R ============*/
 
 footer {
@@ -529,28 +435,3 @@ footer {
 }
 
 /*========== R E S P O N S I V E ============*/
-/* tablet */
-@media (max-width: 992px) {
-  /* .pet-grid {
-    grid-template-columns: repeat(2, 1fr);
-  } */
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  /* .pet-grid {
-    grid-template-columns: repeat(1, 1fr);
-  } */
-  .category-nav label {
-    display: block;
-    margin: 0.8rem 2rem;
-    border-radius: 10px;
-  }
-  /* .tip-box-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  } */
-
-  /* .category-nav label:hover {
-    transform: translateY(var(--nav-transform)); 
-} */
-}
