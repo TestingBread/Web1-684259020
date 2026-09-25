@@ -72,19 +72,29 @@ body {
   line-height: 1.6;
   color: var(--Text-color);
   /* background: var(--body-BG-color); */
+  /* Changed: create a stacking context so the particle background stays behind page content. */
+  position: relative;
+  z-index: 0;
 }
 
 
 /* PARTICLES ZONEEEE */
 .bg-particles  {
    position: fixed;
+   inset: 0;
+   width: 100vw;
+   height: 100vh;
    overflow: hidden;
    background: rgb(10, 10, 15);
+   /* Changed: keep the particle background behind all normal page content. */
+   z-index: -1;
+   /* Changed: particles are decorative and must not block clicks. */
+   pointer-events: none;
    }
 
 .particle  {
    position: absolute;
-   bottom: -20px;
+   top: -20px;
    width: 4px;
    height: 4px;
    background: rgb(99, 102, 241);
@@ -105,7 +115,7 @@ body {
    opacity: 0.5;
    }
   100%  {
-   transform: translateY(-350px) rotate(720deg);
+   transform: translateY(350px) rotate(720deg);
    opacity: 0;
    }
 }
